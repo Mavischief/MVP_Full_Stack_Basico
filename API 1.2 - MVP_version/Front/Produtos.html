@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Produtos</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <!--scripts-->
+    <script src="./JS/sidebar.js" defer></script>
+    <link rel="shortcut icon" href="Image/agr_logo.png" >
+</head>
+<body>
+   <!-- Cobeçalho -->
+   <div class="header" id="header">
+      <button onclick="toggleSidebar()" class="btn_icon_header">
+         <i class="bi bi-list"></i>
+      </button>
+      <div class="logo_header">
+         <img src="Image/agr_logo.png" class="img_logo_header" alt="agr_logo">
+      </div>
+      <div class="navigation_header" id="navigation_header">
+         <button onclick="toggleSidebar()" class="btn_icon_header">
+            <i class="bi bi-x"></i>
+         </button>
+         <a href="./index.html">Home</a>
+         <a href="./Produtos.html" class="active">Produtos</a>
+         <a href="#">PIT</a>
+         <a href="#">PDR</a>
+         <a href="#">ATA</a>
+         <a href="./NC.html">NC</a>
+         <a href="./NE.html">NE</a>
+      </div>
+   </div>
+   <!-- Sidebar toque fora-->
+   <div tabindex="0" onclick="closeSidebar()" class="content" id="content">        
+      <!-- Conteudo da página -->
+      <h1>Produtos</h1>
+      <section class="produto">
+         <div>
+             <a href="./Mrt120.html">
+                 <img src="Image/Mrt_120.jpeg">
+                 <p>Morteiro P 120 M2 R</Ri:a></p>
+             </a>
+         </div>
+         <div>
+             <img src="Image/Mrt_81.jpeg">
+             <p>Morteiro Me Acg 81 mm</p>
+         </div>
+         <div>
+             <img src="Image/Mrt_60.jpg">
+             <p>Morteiro L Acg 60 mm</p>
+         </div>
+         <div>
+             <img src="Image/ATMM.jpeg">
+             <p>ATMM</p>
+         </div>
+         <div>
+             <img src="Image/Blindagem.jpeg">
+             <p>Blindagem</p>
+         </div>
+         <div>
+             <img src="Image/Pl_ref.jpeg">
+             <p>Placas Reforçadoras de Solo</p>
+         </div>
+         <div>
+             <img src="Image/EVN.jpeg">
+             <p>EVN</p>
+         </div>
+         <div>
+             <img src="Image/Radio.jpeg">
+             <p>Rádio</p>
+         </div>
+     </section>
+   
+
+   </div>
+
+
+
+
+</body>
+</html>

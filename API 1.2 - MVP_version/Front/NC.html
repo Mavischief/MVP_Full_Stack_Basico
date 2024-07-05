@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Bootstrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!--CSS-->
+        <link rel="stylesheet" href="./CSS/styles.css">
+        <!--scripts-->
+        <script src="./JS/sidebar.js" defer></script>
+        <script src="./JS/scriptNC.js" defer></script>    
+        <title>Nota de Crédito</title>
+        <link rel="shortcut icon" href="Image/agr_logo.png" >
+    </head>
+<body>
+    <!-- Cobeçalho -->
+   <div class="header" id="header">
+      <button onclick="toggleSidebar()" class="btn_icon_header">
+         <i class="bi bi-list"></i>
+      </button>
+      <div class="logo_header">
+         <img src="Image/agr_logo.png" class="img_logo_header" alt="agr_logo">
+      </div>
+      <div class="navigation_header" id="navigation_header">
+         <button onclick="toggleSidebar()" class="btn_icon_header">
+            <i class="bi bi-x"></i>
+         </button>
+         <a href="./index.html">Home</a>
+         <a href="./Produtos.html" >Produtos</a>
+         <a href="#">PIT</a>
+         <a href="#">PDR</a>
+         <a href="#">ATA</a>
+         <a href="./NC.html" class="active">NC</a>
+         <a href="./NE.html">NE</a>
+      </div>
+   </div>
+   <!-- Sidebar toque fora-->
+   <div tabindex="0" onclick="closeSidebar()" class="content" id="content">        
+      
+    <!---------------------------------------------------------------------------------------------------->    
+    <!--------------------------- Conteúdo da página ----------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------->
+    
+    <h1>Notas de Crédito</h1>
+       <!-- Opções para adicionar um novo item -->
+
+
+    <section class="newItem">
+      <input type="text" id="novaUasg" placeholder="UASG:">
+      <input type="text" id="novaNC" placeholder="Nota de crédito:">
+      <input type="text" id="novoValor" placeholder="Valor:">
+      <input type="text" id="novaND" placeholder="ND:">
+      <input type="text" id="novaAplicacao" placeholder="Aplicação:">
+      <input type="text" id="novaDescricao" placeholder="Descrição:">
+      <button onclick="adicionarNC()" class="addBtn">Adicionar</button>
+    </section>
+
+  <br/>
+  <!-- Tabela com items existentes -->
+  <section class="items">
+      <table id="Tabela_de_NC">
+          <tr>
+              <th>UASG</th>
+              <th>Nota de Crédito</th>
+              <th>Valor</th>
+              <th>ND</th>
+              <th>Aplicação</th>
+              <th>Descrição</th>
+              <th><i class="bi bi-trash"></i></th>
+          </tr>
+      </table>
+  </section>
+      
+  <br />
+
+
+  <!-- Tabela PIT 
+        <thead>
+          <tr>
+            <td>SMEM</td><td>Finalidade</td><td>ND </td><td>Quantidade</td><td>Total </td><td>AO</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="5">Mrt 120</th><th rowspan="2">Revitalização</th><td>44.90.30</td><td>10</td><td>R$ 1.270.000,00</td><td>21D2</td>	
+          </tr>		
+          <tr>
+            <td>33.90.30</td><td>2</td><td>R$ 254.000,00</td><th rowspan="4">21A0</th>
+          </tr>
+          <tr>
+            <td>Ação Apoio Direto</td><td>33.90.30</td><td>2</td><td>R$ 240.000,00</td>
+          </tr>
+          <tr>
+            <td>Kit Suprimento</td><td>33.90.30</td><td>xxx</td><td>R$ 60.000,00</td>
+          </tr>
+          <tr>
+            <td>Kit Ferramental</td><td>33.90.30</td><td>10</td><td>R$ 220.000,00</td>
+          </tr>
+          <tr>
+            <td>Mrt 81 RO</td><td>Revitalização</td><td>33.90.30</td><td>5</td><td>R$ 199.000,00</td><td>21A0</td>
+          </tr>
+          <tr>
+            <th rowspan="6">Mrt 81</th><th rowspan="2">Produção</th><td>44.90.00</td><td>45</td><td>R$ 14.310.000,00</td><td>14T4</td>
+          </tr>
+          <tr>
+            <td>44.90.00</td><td>45</td><td>R$ 14.310.000,00</td><td>21D2</td>
+          </tr>
+          <tr>
+            <td>Kit Ferramental</td><td>33.90.30</td><td>6</td><td>R$ 114.000,00</td><td>21A0</td>
+          </tr>
+          <tr>
+            <td>Kit sup</td><td>33.90.30</td><td>10</td><td>R$ 82.000,00</td><td>21A0</td>
+          </tr>
+          <tr>
+            <td>Brunimento</td><td>44.90.39</td><td>xxx</td><td>xxxx</td><td>xxxx</td>
+          </tr>
+          <tr>
+            <td>Ap pont</td><td>33.90.30</td><td>20</td><td>R$ 660.000,00	</td><td>21A0</td>
+          </tr>
+
+          <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+    -->
+    </div>
+</body>
+</html>
